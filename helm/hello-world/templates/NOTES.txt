@@ -1,0 +1,5 @@
+Application deployed successfully.
+
+To check the service, run:
+
+kubectl get svc
