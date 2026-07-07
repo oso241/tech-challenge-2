@@ -1,14 +1,4 @@
-output "instance_public_ip" {
-  description = "Public IP address of the EC2 instance"
-  value       = aws_instance.web.public_ip
-}
-
-output "instance_public_dns" {
-  description = "Public DNS of the EC2 instance"
-  value       = aws_instance.web.public_dns
-}
-
-output "s3_bucket_name" {
-  description = "Name of the S3 bucket"
-  value       = aws_s3_bucket.terraform_demo.bucket
+output "aws_region" {
+  description = "AWS region"
+  value       = var.aws_region
 }
